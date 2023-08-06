@@ -1,0 +1,125 @@
+/* Imported CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+/* Additional styles for background and font */
+body {
+  background: url('background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 2px solid #f00;
+  border-radius: 8px;
+  width: calc(60% - 10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover {
+  border-color: #FF0000;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #FF0000;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.list-header span {
+  flex-grow: 1;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li span.grocery-name {
+  flex-grow: 1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.totals {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.totals p {
+  margin-bottom: 5px;
+}
+
+/* Custom button styles */
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066CC;
+  padding: 3px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 500ms;
+  padding: 5px 40px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
